@@ -1,0 +1,247 @@
+
+/* General Layout */
+body {
+  background-color: #1e1e2f;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.app-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+}
+
+/* Heading */
+.heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #00d1b2;
+}
+
+/* Cards */
+.card {
+  background: #29293d;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.05);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Buttons */
+.toggle-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.button:hover {
+  opacity: 0.85;
+}
+
+.button.blue {
+  background-color: #007bff;
+  color: white;
+}
+.button.green {
+  background-color: #28a745;
+  color: white;
+}
+.button.red {
+  background-color: #dc3545;
+  color: white;
+}
+.button.yellow {
+  background-color: #ffc107;
+  color: black;
+}
+.button.gray {
+  background-color: #6c757d;
+  color: white;
+}
+
+/* Inputs */
+.input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+/* Utility */
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.text-danger {
+  color: #ff5252;
+  font-weight: bold;
+}
+.wallet-summary {
+  background: #f8f9fa;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.wallet-summary h3 {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.wallet-summary p {
+  margin: 0.25rem 0;
+  word-break: break-all;
+}
+
+.app-wrapper {
+  display: flex;
+  /* flex-direction: column; */
+  /* align-items: flex-end; */
+  gap: 20px;
+  padding: 20px;
+}
+
+.sidebar {
+  width: 400px;
+  background-color: #1e1e2f;
+  padding: 20px;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+}
+
+.app-container {
+  flex: 1;
+  padding: 20px;
+  background-color: #2a2a3d;
+  border-radius: 12px;
+}
+
+.card {
+  background-color: #3a3a50;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+.heading {
+  color: #00e6aa;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.toggle-buttons {
+  margin-bottom: 20px;
+}
+
+.button {
+  margin-right: 10px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+.button.blue { background-color: #007bff; }
+.button.green { background-color: #28a745; }
+.button.yellow { background-color: #ffc107; color: black; }
+.button.gray { background-color: #6c757d; }
+.button.red { background-color: #dc3545; }
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/* src/components/WalletDashboard.css */
+.dashboard-card {
+  background: #1e1e2f;
+  padding: 24px;
+  border-radius: 12px;
+  color: #f2f2f2;
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0 0 12px #0003;
+}
+
+.dashboard-heading {
+  color: #0fdf89;
+  margin-bottom: 20px;
+}
+
+.mono {
+  font-family: monospace;
+  word-break: break-all;
+}
+
+.mono.small {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.tx-link {
+  color: #0f82f2;
+  text-decoration: none;
+}
+
+.tx-link:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+.metamask-fox {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  /* background-color: #1e1e1e; */
+  padding: 8px;
+  box-shadow: 0 0 10px rgba(255, 165, 0, 0.6);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: foxIdle 3s infinite ease-in-out;
+  cursor: pointer;
+}
+
+.metamask-fox:hover {
+  transform: scale(1.08) rotate(-5deg);
+  box-shadow: 0 0 20px rgba(255, 165, 0, 0.9);
+}
+
+/* Idle subtle bounce animation like MetaMask's fox */
+@keyframes foxIdle {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
